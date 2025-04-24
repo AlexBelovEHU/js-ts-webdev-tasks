@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #1e0e62;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e0e62;
+}
+
+.explore-showcase {
+    background-color: transparent;
+    border: 1px solid #ebeaed;
+    color: #1e0e62;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.explore-showcase:hover {
+    background-color: rgba(235, 234, 237, 0.1);
+}
+
+/* Grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Card styles */
+.card {
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.card p {
+    margin-bottom: 64px;
+    line-height: 1.6;
+}
+
+.card-button {
+    align-self: flex-start;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    border: none;
+}
+
+.card-button:hover {
+    opacity: 0.9;
+}
+
+/* Startup Framework Card */
+.startup-framework {
+    background-color: #ebeaed;
+}
+
+.startup-framework h3,
+.startup-framework p {
+    color: #1e0e62;
+}
+
+.startup-framework .card-button {
+    background-color: white;
+    color: #1e0e62;
+    border: 1px solid white;
+}
+
+/* Web Generator Card */
+.web-generator {
+    background-color: white;
+    border: 1px solid #ebeaed;
+}
+
+.web-generator h3 {
+    color: #1e0e62;
+}
+
+.web-generator p {
+    color: #666;
+}
+
+.web-generator .card-button {
+    background-color: #25dac5;
+    color: white;
+}
+
+/* Slides 4 Card */
+.slides {
+    background-color: #482be7;
+}
+
+.slides h3,
+.slides p {
+    color: white;
+}
+
+.slides .card-button {
+    background-color: white;
+    color: #482be7;
+}
+
+/* Postcards Card */
+.postcards {
+    background-image: url('https://source.unsplash.com/random/600x400/?ocean,boat');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.postcards::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(21, 20, 57, 0.4);
+    border-radius: 12px;
+}
+
+.postcards-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.postcards h3,
+.postcards p {
+    color: white;
+}
+
+.postcards p {
+    margin-bottom: auto;
+}
+
+.postcards .card-button {
+    background-color: white;
+    color: #151439;
+    margin-top: 16px;
+}
