@@ -143,7 +143,8 @@ body {
 
 /* Postcards Card */
 .postcards {
-    background-image: url('https://source.unsplash.com/random/600x400/?ocean,boat');
+    background-image: url("./assets/postcards.png");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -157,7 +158,6 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(21, 20, 57, 0.4);
     border-radius: 12px;
 }
 
